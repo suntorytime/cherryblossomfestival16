@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <title>Cherry Blossom Festival 2016</title>
+    <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="carousel/morphCarousel.css" rel="stylesheet">
-    <link href="carousel/morphCarousel.white-theme.css" rel="stylesheet">
+
+    <link href="../dist/morphCarousel.css" rel="stylesheet">
+    <link href="../dist/morphCarousel.black-theme.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -21,20 +22,17 @@
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
-    <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
     <script src="js/services.js"></script>
 
-    <!-- carousel feature -->
-    <script src="carousel/morphCarousel.js"></script>
-
+    <script src="../dist/morphCarousel.js"></script>
   </head>
   <body ng-app="starter">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
-    <ion-nav-bar class="bar-assertive">
+    <ion-nav-bar class="bar-stable">
       <ion-nav-back-button>
       </ion-nav-back-button>
     </ion-nav-bar>

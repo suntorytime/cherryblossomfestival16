@@ -15,7 +15,16 @@ angular.module('starter.controllers', [])
   $scope.remove = function(chat) {
     Chats.remove(chat);
   };
-})
+
+  $scope.items = [
+    { number: 11 },
+    { number: 12 },
+    { number: 17 },
+    { number: 18 },
+  ];
+
+  $scope.selectedItem = $scope.items[0];
+  })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
   $scope.chat = Chats.get($stateParams.chatId);
