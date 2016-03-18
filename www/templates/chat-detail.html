@@ -10,11 +10,11 @@
 
       <div class="item">
         <h2>{{chat.name}}</h2>
-        <p>{{chat.start_at}} to {{chat.end_at}}</p>
+        <p>{{chat.start_at.substring('2015-04-11'.length)}} to {{chat.end_at.substring('2015-04-11'.length)}}</p>
       </div>
 
       <div class="item item-body">
-        <img class="full-image" src="img/cherryfestivalplaceholder.jpg">
+        <img class="full-image" ng-src="img/{{chat.image_name}}.jpg" err-SRC="img/cherryfestivalplaceholder.jpg">
         <p>
           {{chat.description}}
         </p>
