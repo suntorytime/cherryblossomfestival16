@@ -100,6 +100,56 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
         }
       })
 
+  .state('tab.jcccnc', {
+        url: "/jcccnc",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/jcccnc.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
+
+  .state('tab.kabuki', {
+        url: "/kabuki",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/kabuki.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
+
+  .state('tab.konko', {
+        url: "/konko",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/konko.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
+
+  .state('tab.peace', {
+        url: "/peace",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/peace.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
+
+  .state('tab.sakura', {
+        url: "/sakura",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/sakura.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
+
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {

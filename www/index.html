@@ -142,6 +142,396 @@
       </ion-view>
     </script>
 
+    <!-- JCCCNC -->
+
+    <script id="templates/jcccnc.html" type="text/ng-template">
+      <ion-view view-title="Japanese Cultural and Community Center of Northern California">
+        <ion-content class="padding">
+          <ion-list>
+
+            <div class="item item-divider">Saturday April 9, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'JCCCNC'} | filter: {start_at: '2016-04-09'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-09 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-09 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+           <div class="item item-divider">Sunday April 10, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'JCCCNC'} | filter: {start_at: '2016-04-10'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-10 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-10 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+             <div class="item item-divider">Saturday April 16, 2016</div>
+              <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'JCCCNC'} | filter: {start_at: '2016-04-16'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                  <div class="row">
+                    <div class="col">
+                      <p>{{chat.start_at.substring('2016-04-16 '.length)}}</p>
+                      <p>{{chat.end_at.substring('2016-04-16 '.length)}}</p>
+                    </div>
+                    <div class="col col-75">
+                      <h2>{{chat.name}}</h2>
+                      <p>{{chat.location}}</p></div>
+                    </div>
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                  </div>
+                </ion-item>
+               </div>
+
+               <div class="item item-divider">Sunday April 17, 2016</div>
+                <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'JCCCNC'} | filter: {start_at: '2016-04-17'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                    <div class="row">
+                      <div class="col">
+                        <p>{{chat.start_at.substring('2016-04-17 '.length)}}</p>
+                        <p>{{chat.end_at.substring('2016-04-17 '.length)}}</p>
+                      </div>
+                      <div class="col col-75">
+                        <h2>{{chat.name}}</h2>
+                        <p>{{chat.location}}</p></div>
+                      </div>
+                      <i class="icon ion-chevron-right icon-accessory"></i>
+                    </div>
+                  </ion-item>
+                 </div>
+
+          </ion-list>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <!-- End JCCCNC -->
+
+    <!-- Kabuki Cinemas -->
+
+    <script id="templates/kabuki.html" type="text/ng-template">
+      <ion-view view-title="Kabuki Cinemas">
+        <ion-content class="padding">
+          <ion-list>
+
+            <div class="item item-divider">Saturday April 9, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'Kabuki'} | filter: {start_at: '2016-04-09'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-09 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-09 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+           <div class="item item-divider">Sunday April 10, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'Kabuki'} | filter: {start_at: '2016-04-10'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-10 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-10 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+             <div class="item item-divider">Saturday April 16, 2016</div>
+              <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'Kabuki'} | filter: {start_at: '2016-04-16'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                  <div class="row">
+                    <div class="col">
+                      <p>{{chat.start_at.substring('2016-04-16 '.length)}}</p>
+                      <p>{{chat.end_at.substring('2016-04-16 '.length)}}</p>
+                    </div>
+                    <div class="col col-75">
+                      <h2>{{chat.name}}</h2>
+                      <p>{{chat.location}}</p></div>
+                    </div>
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                  </div>
+                </ion-item>
+               </div>
+
+               <div class="item item-divider">Sunday April 17, 2016</div>
+                <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'Kabuki'} | filter: {start_at: '2016-04-17'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                    <div class="row">
+                      <div class="col">
+                        <p>{{chat.start_at.substring('2016-04-17 '.length)}}</p>
+                        <p>{{chat.end_at.substring('2016-04-17 '.length)}}</p>
+                      </div>
+                      <div class="col col-75">
+                        <h2>{{chat.name}}</h2>
+                        <p>{{chat.location}}</p></div>
+                      </div>
+                      <i class="icon ion-chevron-right icon-accessory"></i>
+                    </div>
+                  </ion-item>
+                 </div>
+
+          </ion-list>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <!-- End Kabuki Cinemas -->
+
+    <!-- Konko Church -->
+
+    <script id="templates/konko.html" type="text/ng-template">
+      <ion-view view-title="Konko Church">
+        <ion-content class="padding">
+          <ion-list>
+
+            <div class="item item-divider">Saturday April 9, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'konko'} | filter: {start_at: '2016-04-09'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-09 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-09 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+           <div class="item item-divider">Sunday April 10, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'konko'} | filter: {start_at: '2016-04-10'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-10 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-10 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+             <div class="item item-divider">Saturday April 16, 2016</div>
+              <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'konko'} | filter: {start_at: '2016-04-16'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                  <div class="row">
+                    <div class="col">
+                      <p>{{chat.start_at.substring('2016-04-16 '.length)}}</p>
+                      <p>{{chat.end_at.substring('2016-04-16 '.length)}}</p>
+                    </div>
+                    <div class="col col-75">
+                      <h2>{{chat.name}}</h2>
+                      <p>{{chat.location}}</p></div>
+                    </div>
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                  </div>
+                </ion-item>
+               </div>
+
+               <div class="item item-divider">Sunday April 17, 2016</div>
+                <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'konko'} | filter: {start_at: '2016-04-17'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                    <div class="row">
+                      <div class="col">
+                        <p>{{chat.start_at.substring('2016-04-17 '.length)}}</p>
+                        <p>{{chat.end_at.substring('2016-04-17 '.length)}}</p>
+                      </div>
+                      <div class="col col-75">
+                        <h2>{{chat.name}}</h2>
+                        <p>{{chat.location}}</p></div>
+                      </div>
+                      <i class="icon ion-chevron-right icon-accessory"></i>
+                    </div>
+                  </ion-item>
+                 </div>
+
+          </ion-list>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <!-- End Konko Church -->
+
+    <!-- Peace Plaza Stage -->
+
+    <script id="templates/peace.html" type="text/ng-template">
+      <ion-view view-title="Peace Plaza Stage">
+        <ion-content class="padding">
+          <ion-list>
+
+            <div class="item item-divider">Saturday April 9, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'peace'} | filter: {start_at: '2016-04-09'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-09 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-09 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+           <div class="item item-divider">Sunday April 10, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'peace'} | filter: {start_at: '2016-04-10'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-10 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-10 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+             <div class="item item-divider">Saturday April 16, 2016</div>
+              <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'peace'} | filter: {start_at: '2016-04-16'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                  <div class="row">
+                    <div class="col">
+                      <p>{{chat.start_at.substring('2016-04-16 '.length)}}</p>
+                      <p>{{chat.end_at.substring('2016-04-16 '.length)}}</p>
+                    </div>
+                    <div class="col col-75">
+                      <h2>{{chat.name}}</h2>
+                      <p>{{chat.location}}</p></div>
+                    </div>
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                  </div>
+                </ion-item>
+               </div>
+
+               <div class="item item-divider">Sunday April 17, 2016</div>
+                <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'peace'} | filter: {start_at: '2016-04-17'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                    <div class="row">
+                      <div class="col">
+                        <p>{{chat.start_at.substring('2016-04-17 '.length)}}</p>
+                        <p>{{chat.end_at.substring('2016-04-17 '.length)}}</p>
+                      </div>
+                      <div class="col col-75">
+                        <h2>{{chat.name}}</h2>
+                        <p>{{chat.location}}</p></div>
+                      </div>
+                      <i class="icon ion-chevron-right icon-accessory"></i>
+                    </div>
+                  </ion-item>
+                 </div>
+
+          </ion-list>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <!-- End Peace Plaza Stage -->
+
+    <!-- Sakura 360 -->
+
+    <script id="templates/sakura.html" type="text/ng-template">
+      <ion-view view-title="Sakura 360">
+        <ion-content class="padding">
+          <ion-list>
+
+            <div class="item item-divider">Saturday April 9, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'Sakura 360'} | filter: {start_at: '2016-04-09'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-09 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-09 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+           <div class="item item-divider">Sunday April 10, 2016</div>
+            <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'Sakura 360'} | filter: {start_at: '2016-04-10'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                <div class="row">
+                  <div class="col">
+                    <p>{{chat.start_at.substring('2016-04-10 '.length)}}</p>
+                    <p>{{chat.end_at.substring('2016-04-10 '.length)}}</p>
+                  </div>
+                  <div class="col col-75">
+                    <h2>{{chat.name}}</h2>
+                    <p>{{chat.location}}</p></div>
+                  </div>
+                  <i class="icon ion-chevron-right icon-accessory"></i>
+                </div>
+              </ion-item>
+             </div>
+
+             <div class="item item-divider">Saturday April 16, 2016</div>
+              <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'Sakura 360'} | filter: {start_at: '2016-04-16'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                  <div class="row">
+                    <div class="col">
+                      <p>{{chat.start_at.substring('2016-04-16 '.length)}}</p>
+                      <p>{{chat.end_at.substring('2016-04-16 '.length)}}</p>
+                    </div>
+                    <div class="col col-75">
+                      <h2>{{chat.name}}</h2>
+                      <p>{{chat.location}}</p></div>
+                    </div>
+                    <i class="icon ion-chevron-right icon-accessory"></i>
+                  </div>
+                </ion-item>
+               </div>
+
+               <div class="item item-divider">Sunday April 17, 2016</div>
+                <ion-item class="item-icon-right" ng-repeat="chat in chats | orderBy: 'start_at' | filter: {location: 'Sakura 360'} | filter: {start_at: '2016-04-17'}" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+                    <div class="row">
+                      <div class="col">
+                        <p>{{chat.start_at.substring('2016-04-17 '.length)}}</p>
+                        <p>{{chat.end_at.substring('2016-04-17 '.length)}}</p>
+                      </div>
+                      <div class="col col-75">
+                        <h2>{{chat.name}}</h2>
+                        <p>{{chat.location}}</p></div>
+                      </div>
+                      <i class="icon ion-chevron-right icon-accessory"></i>
+                    </div>
+                  </ion-item>
+                 </div>
+
+          </ion-list>
+        </ion-content>
+      </ion-view>
+    </script>
+
+    <!-- End Sakura 360 -->
+
     <!-- End of event schedules -->
 
   </body>
