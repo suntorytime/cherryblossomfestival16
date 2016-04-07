@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['angularMoment'])
 
 .controller('DashCtrl', function($scope) {})
 
@@ -12,6 +12,10 @@ angular.module('starter.controllers', [])
   //
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+  $scope.orderByDate = function(item) {
+      var time = item.substr(1, 2);;
+      return time;
+  };
 
   $scope.chats = Chats.all();
   $scope.remove = function(chat) {

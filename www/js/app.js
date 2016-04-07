@@ -80,33 +80,25 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
         }
       })
 
-  // .state('tab.navstack', {
-  //       url: "/navstack",
-  //       views: {
-  //         'tab-menu': {
-  //           templateUrl: "templates/nav-stack.html"
-  //         }
-  //       }
-  //     })
+  .state('tab.schedule3', {
+        url: "/schedule3",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/schedule3.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
 
-  // .state('tab.navstack', {
-  //       url: "/navstack",
-  //       views: {
-  //         'tab-menu': {
-  //           templateUrl: "templates/nav-stack.html"
-  //         }
-  //       }
-  //     })
-
-  // .state('tab.chats', {
-  //     url: '/chats',
-  //     views: {
-  //       'tab-chats': {
-  //         templateUrl: 'templates/tab-chats.html',
-  //         controller: 'ChatsCtrl'
-  //       }
-  //     }
-  //   })
+  .state('tab.schedule4', {
+        url: "/schedule4",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/schedule4.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
 
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
