@@ -150,6 +150,36 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
         }
       })
 
+  .state('tab.tateuchi', {
+        url: "/tateuchi",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/tateuchi.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
+
+  .state('tab.union', {
+        url: "/union",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/union.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
+
+  .state('tab.webster', {
+        url: "/webster",
+        views: {
+          'tab-menu': {
+            templateUrl: "templates/webster.html",
+            controller: 'ChatsCtrl'
+          }
+        }
+      })
+
     .state('tab.chat-detail', {
       url: '/chats/:chatId',
       views: {
