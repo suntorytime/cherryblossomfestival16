@@ -5,10 +5,23 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 'starter.services', 'starter.directives'])
+angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.service.push', 'starter.controllers', 'starter.services', 'starter.directives'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
+
+    // Adds push interface
+    var io = Ionic.io();
+        var push = new Ionic.Push({
+          "onNotification": function(notification) {
+            alert('Received notification!');
+          },
+          "pluginConfig": {
+            "android": {
+              "iconColor": "#0000FF"
+            }
+          }
+        });
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
@@ -23,6 +36,13 @@ angular.module('starter', ['ionic','ionic.service.core', 'starter.controllers', 
   });
 })
 
+// .config(["$ionicAppProvider", function($ionicAppProvider) {
+//   $ionicAppProvider.identify({
+//     app_id: 'aa15630f',
+//     api_key:'22e62e8a1bbd5df036a3714b680d5a168cf8264e83390c4f',
+//     dev_push: false
+//   })
+// }])
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states

@@ -3,6 +3,7 @@ angular.module('starter.services', [])
 .factory('Chats', function() {
 
   // Event dataset
+
   var chats = [
   {
       "end_at": "2016-04-09 PM ??:??",
