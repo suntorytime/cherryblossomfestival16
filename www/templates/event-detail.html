@@ -1,0 +1,23 @@
+<!--
+  Details for each event
+-->
+<ion-view view-title="{{event.name}}">
+  <ion-content class="padding">
+    <div class="list card">
+
+      <div class="item">
+        <h2>{{event.name}}</h2>
+        <p>{{event.start_at}} to {{event.end_at}}</p>
+        <p>{{event.location}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img class="full-image" ng-src="img/{{event.image_name}}.jpg" err-SRC="img/cherryfestivalplaceholder.jpg">
+        <p>
+          {{event.description}}
+        </p>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

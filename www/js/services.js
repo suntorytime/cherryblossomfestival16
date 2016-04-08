@@ -1,10 +1,10 @@
 angular.module('starter.services', [])
 
-.factory('Chats', function() {
+.factory('events', function() {
 
   // Event dataset
 
-  var chats = [
+  var events = [
   {
       "end_at": "",
       "location": "Kabuki Cinemas",
@@ -1350,12 +1350,12 @@ angular.module('starter.services', [])
 
   return {
     all: function() {
-      return chats;
+      return events;
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+    get: function(eventId) {
+      for (var i = 0; i < events.length; i++) {
+        if (events[i].id === parseInt(eventId)) {
+          return events[i];
         }
       }
       return null;

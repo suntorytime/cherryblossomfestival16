@@ -70,8 +70,8 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
     url: '/menu',
     views: {
       'tab-menu': {
-        templateUrl: 'templates/tab-chats-menu.html',
-        controller: 'ChatsMenuCtrl'
+        templateUrl: 'templates/tab-events-menu.html',
+        controller: 'eventsMenuCtrl'
       }
     }
   })
@@ -81,7 +81,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/schedule1.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -91,7 +91,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/schedule2.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -101,7 +101,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/schedule3.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -111,7 +111,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/schedule4.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -121,7 +121,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/jcccnc.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -131,7 +131,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/kabuki.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -141,7 +141,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/konko.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -151,7 +151,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/peace.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -161,7 +161,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/sakura.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -171,7 +171,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/tateuchi.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -181,7 +181,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/union.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
@@ -191,27 +191,27 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
         views: {
           'tab-menu': {
             templateUrl: "templates/webster.html",
-            controller: 'ChatsCtrl'
+            controller: 'eventsCtrl'
           }
         }
       })
 
-    .state('tab.chat-detail', {
-      url: '/chats/:chatId',
+    .state('tab.event-detail', {
+      url: '/events/:eventId',
       views: {
         'tab-menu': {
-          templateUrl: 'templates/chat-detail.html',
-          controller: 'ChatDetailCtrl'
+          templateUrl: 'templates/event-detail.html',
+          controller: 'eventDetailCtrl'
         }
       }
     })
 
-    .state('tab.account', {
-      url: '/account',
+    .state('tab.social', {
+      url: '/social',
       views: {
-        'tab-account': {
-          templateUrl: 'templates/tab-account.html',
-          controller: 'AccountCtrl'
+        'tab-social': {
+          templateUrl: 'templates/tab-social.html',
+          controller: 'socialCtrl'
         }
       }
     });

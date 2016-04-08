@@ -2,16 +2,16 @@ angular.module('starter.controllers', ['angularMoment'])
 
 .controller('DashCtrl', function($scope) {})
 
-.controller('ChatsMenuCtrl', function($scope) {})
+.controller('eventsMenuCtrl', function($scope) {})
 
-.controller('ChatsCtrl', function($scope, Chats) {
+.controller('eventsCtrl', function($scope, events) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
   // listen for the $ionicView.enter event:
 
-  $scope.chats = Chats.all();
+  $scope.events = events.all();
 
   $scope.items = [
     { number: 11 },
@@ -23,12 +23,12 @@ angular.module('starter.controllers', ['angularMoment'])
   $scope.selectedItem = $scope.items[0];
   })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+.controller('eventDetailCtrl', function($scope, $stateParams, events) {
 
-  $scope.chat = Chats.get($stateParams.chatId);
+  $scope.event = events.get($stateParams.eventId);
 })
 
-.controller('AccountCtrl', function($scope) {
+.controller('socialCtrl', function($scope) {
   $scope.settings = {
   };
 });
