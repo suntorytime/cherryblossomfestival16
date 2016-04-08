@@ -2,10 +2,14 @@
 <widget id="com.ionicframework.myproject854454" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>Cherry Blossom Festival 2016</name>
   <description>
-        An Ionic Framework and Cordova project.
+    The official Android app for the Northern California Cherry Blossom Festival.
+
+    The 2016 Northern California Cherry Blossom Festival now celebrating its 49th year, is one of California’s most prominent celebrations of Asian traditions. Each year, over 200,000 people attend this dazzling display showcasing the color and grace of the Japanese culture and the diversity of the Japanese American Community.
+
+    The event is free and open to the public. Vendors will be charging for their food goods and some retail products; and some specialized events will require a fee.
     </description>
-  <author email="you@example.com" href="http://example.com.com/">
-      Your Name Here
+  <author email="stevensm90@gmail.com" href="https://suntorytime.github.io/">
+      Steven Santa-Maria
     </author>
   <content src="index.html"/>
   <access origin="*"/>
