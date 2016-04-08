@@ -22,6 +22,7 @@ angular.module('starter', ['ionic','ionic.service.core','ngCordova', 'ionic.serv
             }
           }
         });
+
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
